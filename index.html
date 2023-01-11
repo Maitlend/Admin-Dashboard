@@ -6,25 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="search-bar">
       <form id="form"> 
-        <button>Search</button>
+        <input type="image" src="images/search.svg" alt="Submit" width="24" height="24">
         <input type="search" id="query" name="q" placeholder="Search...">
       </form>
     </div>
-    <div class="profile-links">
-      <span class="material-symbols-outlined md-36 notification-bell">notifications_active</span>
-      <img class="user-profile" src="images/profile.png" alt="">
-      <h3 class="user-name">Morgan Oakley</h3>
-    </div>
     <div class="profile-info">
       <img class="user-profile-main" src="images/profile.png" alt="">
-      <p>Hi there,</p>
-      <p>Morgan Oakley (@morgan)</p>
+      <span>Hi there,</span>
+      <span>Morgan Oakley (@morgan)</span>
+    </div>
+    <div class="profile-links">
+      <img class="bell" src="images/notifications.svg" alt="">
+      <img class="user-profile" src="images/profile.png" alt="">
+      <h3 class="user-name">Morgan Oakley</h3>
     </div>
     <div class="new-post-buttons">
       <button class="post-button">New</button>
@@ -37,26 +38,104 @@
     <h1>Dashboard</h1>
     </div>
     <div class="main-links">
-      <ul>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
+      <ul class="navigation">
+        <li> <img class="svg" src="images/home.svg" alt=""> Home</li>
+        <li> <img class="svg" src="images/profile.svg" alt=""> Profile</li>
+        <li> <img class="svg" src="images/messages.svg" alt=""> Messages</li>
+        <li> <img class="svg" src="images/history.svg" alt=""> History</li>
+        <li> <img class="svg" src="images/tasks.svg" alt=""> Tasks</li>
+        <li> <img class="svg" src="images/communities.svg" alt=""> Communities</li>
       </ul>
     </div>
     <div class="secondary-links">
-      <ul>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+      <ul class="navigation">
+        <li> <img class="svg" src="images/settings.svg" alt=""> Settings</li>
+        <li> <img class="svg" src="images/support.svg" alt=""> Support</li>
+        <li> <img class="svg" src="images/privacy.svg" alt=""> Privacy</li>
       </ul>
     </div>
 
   </nav>
   <main class="content">
+    <div class="content-left-col">
+      <h2>Your Projects</h2>
+      <div class="your-projects">
+        <div class="project-card">
+          <h3>Super Cool Project</h3>
+          <div>Sed tempus ut lacus ut scelerisque.
+            Suspendisse sollicitudin nibh eat, id
+            facilisis felis accumsan nec.</div>
+        </div>
+        <div class="project-card">
+          <h3>Less Cool Project</h3>
+          <div>Nullam condimentum ipsum ut lectus vehicula
+            consectetur. Quisque sed dolor tincidunt,
+            consectetur sapien et, facilisis dolor. Duis sem
+            purus, dignissim ut sapien in, varius
+            pellentesque lacus.</div>
+        </div>
+        <div class="project-card">
+          <h3>Impossible App</h3>
+          <div>In hac habitasse platea dictumst. Vivamus
+            dictum rutrum arcu, a placerat velit sagittis
+            id.</div>
+        </div>
+        <div class="project-card">
+          <h3>Easy Peasy App</h3>
+          <div>Etiam cursus eros ac efficitur fringilla.
+            Vestibulum dignissim urn eget accumsan
+            aliquam. Curabitur dignissim nisi in tortor
+            commodo, ac bibendum magna tincidunt.</div>
+        </div>
+        <div class="project-card">
+          <h3>Ad Blocker</h3>
+          <div>Quisque get rutrum nisl. Nam augue
+            justo, cursus vitae metus vel, pharetra
+            hendrerit felis. Aliquam sed malesuada
+            eros.</div>
+        </div>
+        <div class="project-card">
+          <h3>Money Maker</h3>
+          <div>Present convallis, libero quis congue
+            elementum, nunc ante faucibus sapien, ac
+            scelerisque tortor purus sit amet ex.
+            Pellentesque mollis nec sem vel aliquam.</div>
+        </div>
+      </div>
+    </div>
+    <div class="content-right-col">
+      <div class="announcements">
+        <h2>Announcements</h2>
+        <div class="announcement-content">
+          <div class="announcement">
+            <h4>Site maintenance</h4>
+            <p>Vestibulum condimentum tells lacus,
+              in accumsan elit maximus ac. Donec
+              hendrerit sodales congue...</p>
+          </div>
+          <div class="announcement">
+            <h4>Community Share Day</h4>
+            <p>Nam vel lectus tincidunt. rutrum nulla
+              eu, ornare libero.
+              Aliquam dictum
+              accumsan porttitor...</p>
+          </div>
+          <div class="announcement">
+            <h4>Updated Privacy Policy</h4>
+            <p>Phasellus efficitur nisi get elit
+              consectetur, get condimentum ante
+              auctor. Cras fringilla sagittis sem in
+              mattis…</p>
+          </div>
+        </div>
+      </div>
+      <div class="trending">
+        <h2>Trending</h2>
+        <div class="trending-content">
 
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
