@@ -20,6 +20,7 @@ h3 {
 .svg {
   margin-bottom: -8px;
   fill: white !important;
+  width: 36px;
 }
 
 body {
@@ -104,6 +105,11 @@ body {
   align-items: center;
   justify-content: flex-end;
   /* margin: 20px 50px 0 0; */
+  margin-right: 24px;
+}
+
+.bell {
+  width: 28px;
 }
 
 .user-profile {
@@ -118,7 +124,8 @@ body {
 
 .new-post-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  /* width: 80%; */
 }
 
 .post-button {
@@ -142,6 +149,7 @@ body {
 
 .sidebar {
   grid-area: 1 / 1 / span 2 / 1;
+  padding-left: 20px;
   background-color: #1892D4;
   color: white;
 }
@@ -152,6 +160,10 @@ body {
   padding: 0;
   font-size: 1.25rem;
   font-weight: medium;
+}
+
+.navigation li {
+  margin-bottom: 20px;
 }
 
 .content {
@@ -168,7 +180,7 @@ body {
 .your-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  gap: 15px;
+  gap: 20px;
 }
 
 .project-card {
@@ -190,5 +202,6 @@ body {
 .announcement-content {
   background-color: white;
   padding: 20px;
+  margin-right: 20px;
   border-radius: 5px;
 }
